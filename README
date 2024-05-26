@@ -1,0 +1,5 @@
+Stuurt bij het opstarten een printopdracht naar de printer en is dus bedoeld om
+te worden gebruikt in combinatie met een circuitje dat de ESP32 S2 aanzet en
+lang genoeg (ongeveer een seconde) aan houdt.
+
+Gemaakt voor een "S2 Mini".
