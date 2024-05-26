@@ -56,7 +56,7 @@ void loop() {
 		client.print("\f");
 		client.stop();
 		Serial.println("Date sent to printer.");
-	};
+	}
 
 	Serial.println("Halting.");
 
