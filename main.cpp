@@ -5,19 +5,19 @@
 
 WiFiUDP ntpUDP;
 
-IPAddress printer(10,42,8,10);
-IPAddress myip(10,42,8,9);
-IPAddress mymask(255,255,0,0);
-IPAddress gw(10,42,42,1);
-IPAddress ntp(10,42,42,1);
-IPAddress dns(10,42,42,1);
+IPAddress printer(10,4,2,25);
+IPAddress myip(10,4,2,11);
+IPAddress mymask(255,255,255,0);
+IPAddress gw(10,4,2,1);
+IPAddress ntp(10,4,2,1);
+IPAddress dns(10,4,2,1);
 NTPClient ntpclient(ntpUDP, ntp);
 
 void setup() {
 	Serial.begin(115200);
 	Serial.println("Hallo wereld!");
 	WiFi.config(myip, dns, gw, mymask);
-	WiFi.begin("revspace-pub", "");
+	WiFi.begin("revspace-dingen", "");
 	setenv("TZ","CET-1CEST,M3.5.0/2,M10.5.0/3",1);
 	tzset();
 }
